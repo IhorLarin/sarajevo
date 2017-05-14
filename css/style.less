@@ -8,6 +8,21 @@
 	font-weight: 100;
 }
 
+.opnS-Regular {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.opnS-Semi {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+.opnS-Bold {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
 @bg-blue: #4c76ff;
 @white: #fff;
 @black: #282528;
@@ -15,6 +30,12 @@
 @l-blue: #062033;
 @grey: #83888b;
 @grey2: #bfbfbf;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 html,
 body {
 	font-size: 16px;
@@ -22,7 +43,7 @@ body {
 
 a {
 	font-size: 16px;
-	&:hover {
+	&:hover, &:active, &:focus, &:visited {
 		text-decoration: none;
 	}
 }
@@ -31,7 +52,42 @@ section {
 	padding: 4% 0;
 }
 
-
+.section-cap {
+	text-align: center;
+	h2 {
+		margin: 0 0 2% 0;
+		.latoBlack;
+		font-size: 1.75rem;
+		color: @bg-blue;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	span {
+		position: relative;
+		margin: 0 0 4% 0;
+		color: @grey2;
+		&:before,
+		&:after {
+			content: '';
+			display: block;
+			width: 90px;
+			height: 1px;
+			background: @grey2;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-130%, -100%);
+			transform: translate(-130%, -100%);
+		}
+		&:after {
+			-webkit-transform: translate(30%, -100%);
+			transform: translate(30%, -100%);
+		}
+	}
+	p {
+		// доробити.
+	}
+}
 
 header {
 	position: relative;
@@ -129,34 +185,34 @@ header {
 	}
 }
 
+
 /* Features */
 
-.section-cap {
-	text-align: center;
-	h2 {
-		.latoBlack;
-		font-size: 1.75rem;
-		color: @bg-blue;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-	}
-	p {
-		color: @grey2;
-		&:before {
-			content: '';
-			width: 90px;
-			height: 1px;
+#features {
+	background: lighten(@grey2, 20);
+}
+
+.features {
+	&-box {
+		padding-left: 44px;
+		h3 {
+			.opnS-Semi;
+			position: relative;
+			font-size: 1.125rem;
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 34px;
+				height: 34px;
+				margin-left: -44px;
+				border: solid 1px @bg-blue;
+				border-radius: 50%;
+			}
+		}
+		p {
+			.opnS-Regular;
+			font-size: .75rem;
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-

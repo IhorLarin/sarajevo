@@ -7,6 +7,23 @@
   font-family: 'Lato', sans-serif;
   font-weight: 100;
 }
+.opnS-Regular {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.opnS-Semi {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.opnS-Bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html,
 body {
   font-size: 16px;
@@ -14,11 +31,48 @@ body {
 a {
   font-size: 16px;
 }
-a:hover {
+a:hover,
+a:active,
+a:focus,
+a:visited {
   text-decoration: none;
 }
 section {
   padding: 4% 0;
+}
+.section-cap {
+  text-align: center;
+}
+.section-cap h2 {
+  margin: 0 0 2% 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 1.75rem;
+  color: #4c76ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.section-cap span {
+  position: relative;
+  margin: 0 0 4% 0;
+  color: #bfbfbf;
+}
+.section-cap span:before,
+.section-cap span:after {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 1px;
+  background: #bfbfbf;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-130%, -100%);
+  transform: translate(-130%, -100%);
+}
+.section-cap span:after {
+  -webkit-transform: translate(30%, -100%);
+  transform: translate(30%, -100%);
 }
 header {
   position: relative;
@@ -108,22 +162,30 @@ header:before {
   color: #ffffff;
 }
 /* Features */
-.section-cap {
-  text-align: center;
+#features {
+  background: #f2f2f2;
 }
-.section-cap h2 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  font-size: 1.75rem;
-  color: #4c76ff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.features-box {
+  padding-left: 44px;
 }
-.section-cap p {
-  color: #bfbfbf;
+.features-box h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  position: relative;
+  font-size: 1.125rem;
 }
-.section-cap p:before {
+.features-box h3:before {
   content: '';
-  width: 90px;
-  height: 1px;
+  position: absolute;
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin-left: -44px;
+  border: solid 1px #4c76ff;
+  border-radius: 50%;
+}
+.features-box p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: .75rem;
 }
