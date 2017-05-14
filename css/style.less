@@ -13,6 +13,8 @@
 @black: #282528;
 @opn-light: #6a737b;
 @l-blue: #062033;
+@grey: #83888b;
+html,
 body {
 	font-size: 16px;
 }
@@ -43,35 +45,78 @@ header {
 	}
 }
 
-.header-up {
-//	background: rgba(76, 118, 255, 0.2);
-	&-title {
-		h3 {
-			margin: 0;
-			padding: 20px 0 10px 0;
-			.latoBlack;
-			font-size: 21px;
-			letter-spacing: 1px;
-			color: @white;
-			span {
-				color: @bg-blue;
+.header {
+	&-up {
+		&-title {
+			h3 {
+				margin: 0;
+				padding: 20px 0 10px 0;
+				.latoBlack;
+				font-size: 1.75rem;
+				letter-spacing: 1px;
+				color: @white;
+				span {
+					color: @bg-blue;
+				}
+			}
+		}
+		&-nav {
+			li {
+				display: inline-block;
+				margin-left: 25px;
+				a {
+					display: table;
+					padding: 25px 0 10px 0;
+					.latoThin;
+					font-size: 1rem;
+					color: @white;
+					border-top: solid 2px transparent;
+					&:hover {
+						border-top: solid 2px @bg-blue;
+					}
+				}
 			}
 		}
 	}
-	&-nav {
-		li {
-			display: inline-block;
-			margin-left: 25px;
-			a {
-				display: table;
-				padding: 25px 0 10px 0;
-				.latoThin;
-				font-size: 12px;
+	&-main {
+		&-title {
+			margin-top: 26%;
+			h1 {
+				margin-bottom: 30px;
+				.latoBlack;
 				color: @white;
-				border-top: solid 2px transparent;
-				&:hover {
-					border-top: solid 2px @bg-blue;
+				font-size: 3.875rem;
+				letter-spacing: 1px;
+				span {
+					color: @bg-blue;
 				}
+			}
+			h2,
+			p {
+				margin-bottom: 30px;
+				.latoThin;
+				color: @white;
+				font-size: 3rem;
+				letter-spacing: 1px;
+				word-spacing: 2px;
+				span {
+					color: @bg-blue;
+				}
+			}
+			p {
+				font-size: 1.25rem;
+			}
+		}
+	}
+	&-social {
+		i {
+			margin: 10% .75%;
+			color: @grey;
+			font-size: 1.5rem;
+			cursor: pointer;
+			transition: 300ms;
+			&:hover {
+				color: @white;
 			}
 		}
 	}
