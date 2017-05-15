@@ -41,9 +41,27 @@ body {
 	font-size: 16px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+}
+
 a {
 	font-size: 16px;
-	&:hover, &:active, &:focus, &:visited {
+	&:hover,
+	&:active,
+	&:focus,
+	&:visited {
 		text-decoration: none;
 	}
 }
@@ -64,6 +82,7 @@ section {
 	}
 	span {
 		position: relative;
+		display: block;
 		margin: 0 0 4% 0;
 		color: @grey2;
 		&:before,
@@ -197,15 +216,82 @@ header {
 
 .features {
 	&-box {
-		h3 {
-			.opnS-Semi;
-			position: relative;
-			font-size: 1.125rem;
+		padding: 3% 0 0 0;
+		&-item {
+			padding-left: 54px;
+			margin-bottom: 50px;
+//			text-align: center;
+			h3 {
+				position: relative;
+				display: inline-block;
+				margin-bottom: 1.25rem;
+				.opnS-Semi;
+				position: relative;
+				font-size: 1.125rem;
+			}
+			p {
+				.opnS-Regular;
+				font-size: .75rem;
+				line-height: 1.125rem
+			}
+			.ico-brand:before,
+			.ico-dev:before,
+			.ico-cons:before {
+				content: '';
+				background: url(../img/icons/01-brand.png);
+				position: absolute;
+				display: inline-block;
+				width: 34px;
+				height: 34px;
+				top: -5px;
+				left: -44px;
+			}
+			.ico-dev:before {
+				background: url(../img/icons/02_dev.png);
+			}
+			.ico-cons:before {
+				background: url(../img/icons/03_cons.png);
+			}
 		}
-		p {
-			.opnS-Regular;
-			font-size: .75rem;
-		}
+	}
+	&-text {
+		padding: 3.125rem 6.25rem;
+		color: @black;
+		text-align: center;
+		line-height: 1.875rem;
 	}
 }
 
+.timar {}
+
+.timar-item {
+	margin-top: 1.5rem;
+	padding: 1.25rem 0;
+	-webkit-transition: 300ms;
+	transition: 300ms;
+	span {
+		display: block;
+		font-size: 2.125rem;
+		text-align: center;
+		color: @grey2;
+		-webkit-transition: color 300ms;
+		transition: color 300ms;
+	}
+	h4 {
+		margin-bottom: .625rem;
+		.opnS-Bold;
+		font-size: .875rem;
+	}
+	P {
+		margin-bottom: 0;
+		.opnS-Regular;
+		font-size: .75rem;
+		line-height: 1.25rem;
+	}
+	&:hover {
+		background: #fefce9;
+	}
+	&:hover span {
+		color: @black
+	}
+}
