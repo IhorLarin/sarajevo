@@ -143,7 +143,7 @@ header {
 	}
 	&-main {
 		&-title {
-			margin-top: 26%;
+			margin-top: 20%;
 			h1 {
 				margin-bottom: 30px;
 				.latoBlack;
@@ -190,25 +190,17 @@ header {
 
 #features {
 	background: lighten(@grey2, 20);
+	&-down {
+		background: @white;
+	}
 }
 
 .features {
 	&-box {
-		padding-left: 44px;
 		h3 {
 			.opnS-Semi;
 			position: relative;
 			font-size: 1.125rem;
-			&:before {
-				content: '';
-				position: absolute;
-				display: block;
-				width: 34px;
-				height: 34px;
-				margin-left: -44px;
-				border: solid 1px @bg-blue;
-				border-radius: 50%;
-			}
 		}
 		p {
 			.opnS-Regular;
@@ -216,3 +208,4 @@ header {
 		}
 	}
 }
+

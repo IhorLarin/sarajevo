@@ -121,7 +121,7 @@ header:before {
   border-top: solid 2px #4c76ff;
 }
 .header-main-title {
-  margin-top: 26%;
+  margin-top: 20%;
 }
 .header-main-title h1 {
   margin-bottom: 30px;
@@ -165,24 +165,14 @@ header:before {
 #features {
   background: #f2f2f2;
 }
-.features-box {
-  padding-left: 44px;
+#features-down {
+  background: #ffffff;
 }
 .features-box h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   position: relative;
   font-size: 1.125rem;
-}
-.features-box h3:before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 34px;
-  height: 34px;
-  margin-left: -44px;
-  border: solid 1px #4c76ff;
-  border-radius: 50%;
 }
 .features-box p {
   font-family: 'Open Sans', sans-serif;
