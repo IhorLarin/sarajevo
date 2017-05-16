@@ -139,7 +139,7 @@ header:before {
   border-top: solid 2px #4c76ff;
 }
 .header-main-title {
-  margin-top: 20%;
+  margin-top: 22%;
 }
 .header-main-title h1 {
   margin-bottom: 30px;
@@ -286,9 +286,4 @@ header:before {
 .tab-list li a:hover {
   color: #ffffff;
   background: #4c76ff;
-}
-.tab-items li {
-  float: left;
-  width: 25%;
-  overflow: hidden;
 }
