@@ -56,6 +56,12 @@ img {
 	width: 100%;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 a {
 	font-size: 16px;
 	&:hover,
@@ -220,7 +226,7 @@ header {
 		&-item {
 			padding-left: 54px;
 			margin-bottom: 50px;
-//			text-align: center;
+			//			text-align: center;
 			h3 {
 				position: relative;
 				display: inline-block;
@@ -262,8 +268,6 @@ header {
 	}
 }
 
-.timar {}
-
 .timar-item {
 	margin-top: 1.5rem;
 	padding: 1.25rem 0;
@@ -295,3 +299,43 @@ header {
 		color: @black
 	}
 }
+
+/*----------works---------*/
+
+.tab-list {
+	display: flex;
+	justify-content: center;
+	margin: 4% 0;
+	li {
+		margin: 0 5px;
+		a {
+			.latoBlack;
+			color: @black;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 14px;
+			-webkit-transition: 300ms;
+			transition: 300ms;
+			&:hover {
+				color: @white;
+				background: @bg-blue;
+			}
+		}
+	}
+}
+
+.tab-items {
+	li {
+		float: left;
+		width: 25%;
+		overflow: hidden;
+	}
+}
+
+
+
+
+
+
+
+
